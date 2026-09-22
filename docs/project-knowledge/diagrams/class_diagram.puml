@@ -1,0 +1,85 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class User
+class Role
+class Permission
+class News
+class NewsCategory
+class EditorialWorkflow
+class MatchFixture
+class Team
+class Player
+class Group
+class Standing
+class City
+class Stadium
+class Partner
+class MediaFile
+class MediaRelation
+class AuditLog
+class UserFavorite
+class UserNotification
+
+User "many" -- "many" Role : role_user
+Role "many" -- "many" Permission : permission_role
+NewsCategory "1" -- "many" News
+User "1" -- "many" News : author/editor
+News "1" -- "many" EditorialWorkflow
+Group "1" -- "many" Team
+Group "1" -- "many" MatchFixture
+Group "1" -- "many" Standing
+Team "1" -- "many" Player
+Team "1" -- "many" Standing
+Team "1" -- "many" MatchFixture : home/away
+City "1" -- "many" Stadium
+City "1" -- "many" MatchFixture
+Stadium "1" -- "many" MatchFixture
+MediaFile "1" -- "many" MediaRelation
+User "1" -- "many" UserFavorite
+User "1" -- "many" UserNotification
+User "1" -- "many" AuditLog
+
+class "Site\\HomeController" as HomeController
+class "Site\\MatchController" as MatchController
+class "Site\\NewsController" as PublicNewsController
+class "Admin\\DashboardController" as DashboardController
+class "Admin\\NewsController" as AdminNewsController
+class "Admin\\FootballDataImportController" as FootballDataImportController
+class "Admin\\PartnerController" as AdminPartnerController
+
+class FootballDataClient
+class FootballDataWorldCupReconciliationService
+class FootballDataWorldCupTeamReconciliationService
+class FootballDataWorldCupStructureService
+class FootballDataSquadPayloadCollector
+class FootballDataSquadImportService
+class ReconcileFootballDataMatches
+class NewsWorkflowManager
+class NewsMediaStorage
+class PublicSearchService
+
+ReconcileFootballDataMatches --> FootballDataWorldCupReconciliationService
+FootballDataWorldCupReconciliationService --> FootballDataClient
+FootballDataWorldCupReconciliationService --> MatchFixture
+FootballDataWorldCupReconciliationService --> Team
+FootballDataImportController --> FootballDataWorldCupReconciliationService
+FootballDataImportController --> FootballDataWorldCupTeamReconciliationService
+FootballDataImportController --> FootballDataWorldCupStructureService
+FootballDataImportController --> FootballDataSquadImportService
+AdminNewsController --> News
+AdminNewsController --> NewsCategory
+AdminNewsController --> NewsMediaStorage
+AdminNewsController --> NewsWorkflowManager
+PublicNewsController --> News
+AdminPartnerController --> Partner
+MatchController --> MatchFixture
+DashboardController --> MatchFixture
+
+class NewsPolicy
+class PartnerPolicy
+class MatchFixturePolicy
+class MediaFilePolicy
+class EnsureAdminAccess
+class EnsurePublicAccountAccess
+@enduml

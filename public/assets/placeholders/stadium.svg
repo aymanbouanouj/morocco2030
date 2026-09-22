@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="stadium-title stadium-desc">
+  <title id="stadium-title">Stadium placeholder</title>
+  <desc id="stadium-desc">Original MOROCCO 2030 stadium placeholder artwork.</desc>
+  <rect width="960" height="540" fill="#071320"/>
+  <ellipse cx="480" cy="310" rx="312" ry="138" fill="#f8f6f2" opacity=".12"/>
+  <ellipse cx="480" cy="310" rx="245" ry="96" fill="#1f7a45"/>
+  <ellipse cx="480" cy="310" rx="158" ry="55" fill="none" stroke="#f8f6f2" stroke-width="7"/>
+  <path d="M206 243c62-86 165-130 274-130s212 44 274 130" fill="none" stroke="#c9a44c" stroke-width="18" stroke-linecap="round"/>
+  <path d="M253 227h454" stroke="#b10f2e" stroke-width="12" stroke-linecap="round"/>
+  <text x="480" y="486" text-anchor="middle" fill="#f8f6f2" font-size="34" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">STADIUM</text>
+</svg>

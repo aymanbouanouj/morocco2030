@@ -1,0 +1,19 @@
+@startuml
+actor "Public User" as User
+participant "PublicAuthenticatedSessionController" as Auth
+participant "EnsurePublicAccountAccess" as Middleware
+participant AccountController
+database MySQL
+participant "public/account views" as Views
+
+User -> Auth : POST /login
+Auth -> MySQL : validate user credentials
+Auth --> User : redirect /account
+User -> Middleware : GET /account
+Middleware -> AccountController : allowed public user
+AccountController -> MySQL : load user/favorites/notifications
+AccountController -> Views : render account page
+User -> AccountController : PUT profile/settings
+AccountController -> MySQL : update safe fields
+User -> Auth : POST /logout
+@enduml

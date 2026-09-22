@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="partner-title partner-desc">
+  <title id="partner-title">Partner placeholder</title>
+  <desc id="partner-desc">Original MOROCCO 2030 partner placeholder artwork.</desc>
+  <rect width="960" height="540" fill="#f8f6f2"/>
+  <circle cx="390" cy="244" r="96" fill="#b10f2e"/>
+  <circle cx="570" cy="244" r="96" fill="#071320"/>
+  <path d="M454 176c18 18 30 42 30 68s-12 50-30 68c-18-18-30-42-30-68s12-50 30-68Z" fill="#c9a44c"/>
+  <path d="M300 386h360" stroke="#6f0d1b" stroke-width="18" stroke-linecap="round"/>
+  <text x="480" y="452" text-anchor="middle" fill="#17212b" font-size="34" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">PARTNER</text>
+</svg>

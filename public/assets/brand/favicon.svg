@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="favicon-title">
+  <title id="favicon-title">MOROCCO 2030 favicon</title>
+  <defs>
+    <linearGradient id="bg" x1="8" y1="4" x2="56" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b10f2e"/>
+      <stop offset="1" stop-color="#071320"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="30" fill="url(#bg)"/>
+  <path d="M32 10 38 26 55 27 42 37 47 54 32 44 17 54 22 37 9 27 26 26Z" fill="none" stroke="#f4d98b" stroke-width="3.4" stroke-linejoin="round"/>
+  <circle cx="32" cy="32" r="9" fill="#f8f6f2"/>
+</svg>

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software in academic work, please cite it using this metadata."
+title: "Morocco2030"
+type: software
+authors:
+  - name: "aymanbounaouj"
+abstract: "A Laravel demonstration portal and role-based operations platform for a Morocco 2030 football tournament concept."
+keywords:
+  - Laravel
+  - football
+  - tournament management
+  - role-based access control
+license: proprietary

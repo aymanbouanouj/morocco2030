@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="city-title city-desc">
+  <title id="city-title">City placeholder</title>
+  <desc id="city-desc">Original MOROCCO 2030 host city placeholder artwork.</desc>
+  <rect width="960" height="540" fill="#f8f6f2"/>
+  <path d="M0 394 150 312l116 50 150-112 167 92 127-70 250 122v146H0z" fill="#ded3c3"/>
+  <path d="M158 252h102v192H158zM311 200h112v244H311zM475 256h102v188H475zM630 166h120v278H630z" fill="#071320"/>
+  <path d="M630 166h120l-60-66z" fill="#b10f2e"/>
+  <path d="M311 200h112l-56-62z" fill="#c9a44c"/>
+  <text x="480" y="498" text-anchor="middle" fill="#17212b" font-size="34" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">HOST CITY</text>
+</svg>

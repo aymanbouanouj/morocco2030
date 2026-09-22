@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="team-title team-desc">
+  <title id="team-title">Team placeholder</title>
+  <desc id="team-desc">Original MOROCCO 2030 team placeholder artwork.</desc>
+  <rect width="960" height="540" fill="#071320"/>
+  <path d="M0 0h960v540H0z" fill="url(#team-bg)"/>
+  <defs>
+    <linearGradient id="team-bg" x1="0" y1="0" x2="960" y2="540" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6f0d1b"/>
+      <stop offset=".62" stop-color="#071320"/>
+      <stop offset="1" stop-color="#132238"/>
+    </linearGradient>
+  </defs>
+  <circle cx="480" cy="230" r="118" fill="#f8f6f2" opacity=".08"/>
+  <path d="M480 101 512 188 605 191 531 247 557 337 480 286 403 337 429 247 355 191 448 188Z" fill="none" stroke="#c9a44c" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M307 402h346" stroke="#f8f6f2" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <text x="480" y="462" text-anchor="middle" fill="#f8f6f2" font-size="38" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">TEAM</text>
+</svg>

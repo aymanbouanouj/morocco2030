@@ -1,0 +1,77 @@
+erDiagram
+    USERS ||--o{ ROLE_USER : has
+    ROLES ||--o{ ROLE_USER : assigned
+    ROLES ||--o{ PERMISSION_ROLE : grants
+    PERMISSIONS ||--o{ PERMISSION_ROLE : included
+    USERS ||--o{ NEWS : authors
+    NEWS_CATEGORIES ||--o{ NEWS : categorizes
+    NEWS ||--o{ EDITORIAL_WORKFLOWS : tracks
+    GROUPS ||--o{ TEAMS : contains
+    GROUPS ||--o{ MATCHES : schedules
+    GROUPS ||--o{ STANDINGS : ranks
+    TEAMS ||--o{ PLAYERS : has
+    TEAMS ||--o{ STANDINGS : ranked
+    TEAMS ||--o{ MATCHES : home_team
+    TEAMS ||--o{ MATCHES : away_team
+    CITIES ||--o{ STADIUMS : contains
+    CITIES ||--o{ MATCHES : hosts
+    STADIUMS ||--o{ MATCHES : venue
+    MATCHES ||--o{ MATCH_EVENTS : events
+    MATCHES ||--o{ MATCH_STATISTICS : statistics
+    MATCHES ||--o{ MATCH_LINEUPS : lineups
+    MATCHES ||--o{ KNOCKOUT_PROGRESSIONS : source_or_target
+    MEDIA_FILES ||--o{ MEDIA_RELATIONS : attaches
+    USERS ||--o{ USER_FAVORITES : owns
+    USERS ||--o{ USER_NOTIFICATIONS : receives
+    USERS ||--o{ AUDIT_LOGS : performs
+
+    USERS {
+      bigint id PK
+      string email
+      string user_type
+      string status
+    }
+    ROLES {
+      bigint id PK
+      string slug
+      string name
+    }
+    PERMISSIONS {
+      bigint id PK
+      string module
+      string slug
+    }
+    NEWS {
+      bigint id PK
+      bigint category_id FK
+      bigint author_id FK
+      string status
+      string visibility
+      timestamp published_at
+    }
+    MATCHES {
+      bigint id PK
+      string code
+      string status
+      int home_score
+      int away_score
+      json meta
+    }
+    TEAMS {
+      bigint id PK
+      bigint group_id FK
+      string code
+      string coach_name
+      json meta
+    }
+    PLAYERS {
+      bigint id PK
+      bigint team_id FK
+      string external_provider
+      string external_id
+    }
+    PARTNERS {
+      bigint id PK
+      string status
+      string logo_path
+    }

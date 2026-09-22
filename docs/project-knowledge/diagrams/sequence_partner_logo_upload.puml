@@ -1,0 +1,19 @@
+@startuml
+actor "Sponsor Manager" as Sponsor
+participant "Admin PartnerController" as Controller
+participant "Store/UpdatePartnerRequest" as Request
+participant "Storage public disk" as Storage
+participant Partner
+database MySQL
+participant "Public PartnerController/HomeController" as Public
+participant "MediaReadinessController" as MediaReadiness
+
+Sponsor -> Controller : POST/PUT admin.partners
+Controller -> Request : validate partner fields + logo
+Controller -> Storage : store partners/logos
+Controller -> Partner : set logo_path/logo_alt/status
+Partner -> MySQL : save
+Public -> Partner : publiclyVisible(), logoUrl()
+Public --> Sponsor : logo visible on /partners/home
+MediaReadiness -> MySQL : media/context counts
+@enduml

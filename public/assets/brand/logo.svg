@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="logo-title logo-desc">
+  <title id="logo-title">MOROCCO 2030 brand placeholder</title>
+  <desc id="logo-desc">Original circular MOROCCO 2030 placeholder mark with red, burgundy, ivory, and gold geometry.</desc>
+  <defs>
+    <linearGradient id="logo-bg" x1="72" y1="32" x2="440" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b10f2e"/>
+      <stop offset="0.55" stop-color="#6f0d1b"/>
+      <stop offset="1" stop-color="#071320"/>
+    </linearGradient>
+    <linearGradient id="logo-gold" x1="120" y1="90" x2="404" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4d98b"/>
+      <stop offset="1" stop-color="#c9a44c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="url(#logo-bg)"/>
+  <circle cx="256" cy="256" r="217" fill="none" stroke="url(#logo-gold)" stroke-width="10"/>
+  <path d="M256 99 294 203 405 207 317 274 348 382 256 320 164 382 195 274 107 207 218 203Z" fill="none" stroke="#f8f6f2" stroke-width="14" stroke-linejoin="round"/>
+  <circle cx="256" cy="256" r="70" fill="#071320" opacity=".42" stroke="#c9a44c" stroke-width="8"/>
+  <text x="256" y="248" text-anchor="middle" fill="#f8f6f2" font-size="70" font-weight="800" font-family="Georgia, serif" letter-spacing="4">M</text>
+  <text x="256" y="305" text-anchor="middle" fill="#f4d98b" font-size="44" font-weight="800" font-family="Arial, sans-serif" letter-spacing="2">30</text>
+</svg>

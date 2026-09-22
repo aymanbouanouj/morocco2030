@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="news-title news-desc">
+  <title id="news-title">News placeholder</title>
+  <desc id="news-desc">Original MOROCCO 2030 news placeholder artwork.</desc>
+  <rect width="960" height="540" fill="#f8f6f2"/>
+  <rect x="240" y="104" width="480" height="332" rx="28" fill="#ffffff" stroke="#ded3c3" stroke-width="10"/>
+  <rect x="286" y="154" width="188" height="126" rx="16" fill="#b10f2e"/>
+  <path d="M514 162h154M514 209h120M286 326h382M286 374h286" stroke="#071320" stroke-width="22" stroke-linecap="round"/>
+  <path d="M330 214 361 246 424 176" fill="none" stroke="#c9a44c" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="480" y="498" text-anchor="middle" fill="#17212b" font-size="34" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">NEWS</text>
+</svg>

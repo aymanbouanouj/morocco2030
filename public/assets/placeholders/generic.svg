@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="generic-title generic-desc">
+  <title id="generic-title">MOROCCO 2030 generic placeholder</title>
+  <desc id="generic-desc">Original generic placeholder artwork for missing MOROCCO 2030 media.</desc>
+  <rect width="960" height="540" fill="#f8f6f2"/>
+  <path d="M0 0h960v540H0z" fill="#f8f6f2"/>
+  <path d="M0 430 190 295 355 378 525 248 705 342 960 170v370H0z" fill="#e7ddd0"/>
+  <circle cx="762" cy="122" r="62" fill="#c9a44c" opacity=".72"/>
+  <path d="M480 152 505 220 577 222 520 265 540 335 480 295 420 335 440 265 383 222 455 220Z" fill="none" stroke="#b10f2e" stroke-width="12" stroke-linejoin="round"/>
+  <text x="480" y="448" text-anchor="middle" fill="#17212b" font-size="38" font-family="Arial, sans-serif" font-weight="800" letter-spacing="3">MOROCCO 2030</text>
+</svg>

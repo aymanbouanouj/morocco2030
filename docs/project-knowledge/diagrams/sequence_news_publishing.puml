@@ -1,0 +1,23 @@
+@startuml
+actor Journalist
+actor "Chief Editor/Super Admin" as Editor
+participant "Admin NewsController" as NewsController
+participant "NewsWorkflowController" as WorkflowController
+participant NewsWorkflowManager
+database MySQL
+participant "Public NewsController/HomeController" as PublicNews
+
+Journalist -> NewsController : POST admin.news.store
+NewsController -> MySQL : create News status=draft
+Journalist -> WorkflowController : POST submit-review
+WorkflowController -> NewsWorkflowManager : submitForReview()
+NewsWorkflowManager -> MySQL : status=pending_review + workflow row
+Editor -> WorkflowController : POST approve
+WorkflowController -> NewsWorkflowManager : approve()
+NewsWorkflowManager -> MySQL : status=approved
+Editor -> WorkflowController : POST publish
+WorkflowController -> NewsWorkflowManager : publish()
+NewsWorkflowManager -> MySQL : status=published, published_at
+PublicNews -> MySQL : query status=published visibility=public
+PublicNews --> Journalist : article visible on /news and home
+@enduml

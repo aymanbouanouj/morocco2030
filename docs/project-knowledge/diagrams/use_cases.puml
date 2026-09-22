@@ -1,0 +1,72 @@
+@startuml
+left to right direction
+actor Guest
+actor "Public User" as PublicUser
+actor Journalist
+actor "Chief Editor" as ChiefEditor
+actor "Super Admin" as SuperAdmin
+actor "Platform Admin" as PlatformAdmin
+actor "Match Manager" as MatchManager
+actor "Team Manager" as TeamManager
+actor "Venue Manager" as VenueManager
+actor "Sponsor Manager" as SponsorManager
+actor "Media Manager" as MediaManager
+actor Translator
+actor Analyst
+actor "Support Agent" as SupportAgent
+actor "External football-data API" as API
+
+rectangle "Morocco 2030" {
+  usecase "Browse home" as UC_HOME
+  usecase "View matches/results" as UC_MATCH
+  usecase "View standings" as UC_STAND
+  usecase "View teams/players" as UC_TEAM
+  usecase "View cities/stadiums/map" as UC_VENUE
+  usecase "View partners" as UC_PARTNERS
+  usecase "Read news" as UC_READ_NEWS
+  usecase "Manage public account" as UC_ACCOUNT
+  usecase "Create news" as UC_CREATE_NEWS
+  usecase "Submit news for review" as UC_SUBMIT_NEWS
+  usecase "Publish news" as UC_PUBLISH_NEWS
+  usecase "Manage teams/players" as UC_MANAGE_TEAMS
+  usecase "Manage matches" as UC_MANAGE_MATCHES
+  usecase "Refresh football-data matches" as UC_REFRESH
+  usecase "Manage cities/stadiums" as UC_MANAGE_VENUES
+  usecase "Manage partners/logos" as UC_MANAGE_PARTNERS
+  usecase "Review media assets" as UC_MEDIA
+  usecase "Manage translations" as UC_TRANSLATE
+  usecase "View analytics" as UC_ANALYTICS
+  usecase "Manage users/RBAC" as UC_RBAC
+  usecase "View audit logs" as UC_AUDIT
+  usecase "Manage settings" as UC_SETTINGS
+}
+
+Guest --> UC_HOME
+Guest --> UC_MATCH
+Guest --> UC_STAND
+Guest --> UC_TEAM
+Guest --> UC_VENUE
+Guest --> UC_PARTNERS
+Guest --> UC_READ_NEWS
+PublicUser --> UC_ACCOUNT
+Journalist --> UC_CREATE_NEWS
+Journalist --> UC_SUBMIT_NEWS
+ChiefEditor --> UC_PUBLISH_NEWS
+SuperAdmin --> UC_PUBLISH_NEWS
+SuperAdmin --> UC_REFRESH
+SuperAdmin --> UC_RBAC
+SuperAdmin --> UC_AUDIT
+SuperAdmin --> UC_SETTINGS
+PlatformAdmin --> UC_REFRESH
+PlatformAdmin --> UC_SETTINGS
+MatchManager --> UC_MANAGE_MATCHES
+TeamManager --> UC_MANAGE_TEAMS
+VenueManager --> UC_MANAGE_VENUES
+SponsorManager --> UC_MANAGE_PARTNERS
+MediaManager --> UC_MEDIA
+Translator --> UC_TRANSLATE
+Analyst --> UC_ANALYTICS
+Analyst --> UC_AUDIT
+SupportAgent --> UC_SETTINGS
+API --> UC_REFRESH
+@enduml

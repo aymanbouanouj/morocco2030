@@ -1,0 +1,22 @@
+@startuml
+actor "Super/Platform Admin or CLI" as Admin
+participant "football-data:reconcile-matches" as Command
+participant FootballDataWorldCupReconciliationService as Service
+participant FootballDataClient as Client
+participant "football-data.org API" as API
+database MySQL
+participant MatchFixture
+participant "Public /matches,/results,/standings" as PublicPages
+
+Admin -> Command : run
+Command -> Service : reconcile()
+Service -> Client : getWorldCupMatches()
+Client -> API : GET /competitions/WC/matches
+API --> Client : 104 matches/status/scores
+Client --> Service : safe result
+Service -> MatchFixture : find code FD-WC-{id}
+Service -> MySQL : update status/date/scores/meta
+Command <-- Service : summary
+PublicPages -> MySQL : read FD-WC scoped matches
+PublicPages --> Admin : updated public display
+@enduml
