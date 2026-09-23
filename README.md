@@ -23,7 +23,7 @@ Original creator and maintainer: **Ayman Bounaouj**
 
 [![Watch the Morocco2030 Original Project Demo](https://img.youtube.com/vi/8woZLL5p7VA/hqdefault.jpg)](https://www.youtube.com/watch?v=8woZLL5p7VA)
 
-**Watch the full 11-minute demonstration:**  
+**Watch the full 11-minute demonstration:**<br>
 [Morocco2030 — Original / Presented Build](https://www.youtube.com/watch?v=8woZLL5p7VA)
 
 > **Demo scope:** This video presents the **Original / Presented Build** of Morocco2030 — the local version developed and used during the project development and academic presentation.
