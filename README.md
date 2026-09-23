@@ -19,6 +19,35 @@ Original creator and maintainer: **Ayman Bounaouj**
 
 > Morocco2030 is an independent academic and software engineering project. It is not an official FIFA or tournament-organizer platform.
 
+## Original Project Demonstration
+
+[![Watch the Morocco2030 Original Project Demo](https://img.youtube.com/vi/8woZLL5p7VA/hqdefault.jpg)](https://www.youtube.com/watch?v=8woZLL5p7VA)
+
+**Watch the full 11-minute demonstration:**  
+[Morocco2030 — Original / Presented Build](https://www.youtube.com/watch?v=8woZLL5p7VA)
+
+> **Demo scope:** This video presents the **Original / Presented Build** of Morocco2030 — the local version developed and used during the project development and academic presentation.
+>
+> The source code published in this repository is the **Public Repository Edition**, prepared for safe public distribution. Sensitive runtime data was excluded, security and privacy protections were strengthened, and some visual assets, media fallbacks and data-persistence behavior were adjusted or replaced with publication-safe alternatives.
+>
+> As a result, some visual details shown in the video may differ from the public repository. The core architecture, tournament workflows, RBAC system, multilingual functionality, administration modules, testing strategy and overall software engineering design remain representative of the original project.
+
+### Original / Presented Build
+
+- Full local project used during development and academic presentation.
+- Includes the original visual design and local media assets.
+- Documented in the project demonstration video above.
+
+### Public Repository Edition
+
+- Public source code available in this repository.
+- Sanitized for safe public distribution.
+- Security and privacy hardened.
+- Some visual and media assets replaced with publication-safe alternatives.
+- Suitable for inspection, learning, experimentation, modification and contribution.
+
+Developers are welcome to study the architecture, experiment with the application, create alternative interface designs, and contribute improvements under the repository license.
+
 ## Project overview
 
 The application models the public and operational sides of a football tournament in one Laravel codebase. Public visitors can explore fixtures, results, standings, knockout rounds, teams, players, venues, partners, news, and multilingual content. Authorized staff use an administration area for competition, editorial, media, translation, access-control, and audit workflows.
