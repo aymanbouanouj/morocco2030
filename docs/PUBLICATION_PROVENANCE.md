@@ -1,19 +1,21 @@
 # Publication Provenance
 
-## Source and Attribution
+## Original authorship
 
-This public repository is a security-sanitized publication snapshot of the Morocco2030 project authored under the account name `aymanbounaouj`. Development occurred between 25 May 2026 and 22 September 2026 in a private recovered Git archive containing 117 commits.
+Morocco2030 was originally created by Ayman Bounaouj in 2026 as an independent academic and software engineering project. The public repository preserves that authorship through `AUTHORS.md`, `COPYRIGHT`, `NOTICE`, release metadata, and Git history.
 
-## Why Public History Starts Here
+## Sanitized public lineage
 
-The recovered private history contains a historical application secret. Removing the file from the latest tree would not remove it from older Git objects. The public repository therefore starts from a clean root commit built from the final reviewed source, after publication-specific security, privacy, asset-rights, and documentation changes.
+A private original development history exists. During publication review, historical credentials were found in that private provenance. Removing a secret only from the latest tree would not remove it from earlier Git objects, so the public repository was intentionally initialized from a reviewed, security-sanitized source snapshot.
 
-The private archive remains the immutable provenance record. It is not safe for public distribution. Public commit hashes intentionally differ from private historical hashes, and this document does not reproduce secret-bearing commit identifiers.
+The sanitized public history does not claim to reproduce every original private commit hash. Public commit identifiers necessarily differ from the private development history.
 
-## Chronology
+## Independent preservation
 
-- May to September 2026: application development and hardening in private history.
-- September 2026: final source preservation and Git recovery validation.
-- September 2026: clean publication lineage prepared from the reviewed final state.
+The final version presented for academic review was independently preserved before publication work. Private SHA-256 manifests record that preservation without exposing secret values, private machine paths, or private backup filenames in this public repository.
 
-This approach preserves authorship and chronology in human-readable form while preventing the secret-bearing object graph from becoming part of the public repository.
+The private provenance and preservation evidence remain confidential and are not publication artifacts. Their purpose is authorship, chronology, and integrity verification, not public distribution.
+
+## Public release process
+
+Publication work is performed only in the sanitized repository. Release preparation includes isolated tests, dependency audits, rights review, documentation, screenshots using synthetic data, worktree and Git-object secret scanning, and release fingerprints. Future public commits build on this sanitized lineage rather than importing secret-bearing objects.

@@ -1,9 +1,13 @@
 Morocco2030 Publication Notice
 
-Morocco2030 is an independent educational and portfolio project. It is not affiliated with, endorsed by, or sponsored by FIFA, the 2030 FIFA World Cup, any football federation, or any commercial partner.
+Morocco2030 was originally created by Ayman Bounaouj in 2026.
 
-Names and trademarks referenced in text remain the property of their respective owners. Their appearance identifies subject matter only and does not imply endorsement.
+Copyright (C) 2026 Ayman Bounaouj.
 
-The runtime country flag assets under public/assets/images/flag are derived from flag-icons and are distributed under the MIT License. The required license text is preserved with those assets.
+This software is distributed under the GNU Affero General Public License version 3 only (SPDX-License-Identifier: AGPL-3.0-only). Applicable copyright, attribution, and license notices must be retained. Community contributions remain attributable to their respective authors.
 
-No project-wide open-source license has been selected. See README.md and THIRD_PARTY_ASSETS.md before redistributing any part of this repository.
+Modified versions must identify that they have been modified and must not falsely represent themselves as the original unmodified release. This statement is a provenance and attribution notice; it does not restrict the rights granted by the AGPL-3.0-only license.
+
+Third-party names and trademarks remain the property of their respective owners. Morocco2030 is independent and is not an official FIFA or tournament-organizer platform. References identify subject matter only and do not imply endorsement.
+
+The country-flag assets under `public/assets/images/flag/` are derived from `lipis/flag-icons` and remain under the MIT License. The corresponding license text is preserved in that directory. See `THIRD_PARTY_ASSETS.md` and `TRADEMARKS.md`.

@@ -1,20 +1,22 @@
 # Third-Party Assets
 
-## Retained Assets
+## Retained assets
 
 | Path | Provenance | License | Publication treatment |
 |---|---|---|---|
-| `public/assets/images/flag/` | `lipis/flag-icons` runtime SVG subset | MIT | Retained with the bundled license notice. |
-| `public/assets/brand/logo.svg` | Project publication placeholder | Project-owned | Retained; not an official tournament mark. |
-| `public/assets/brand/favicon.svg` | Project publication placeholder | Project-owned | Retained; not an official tournament mark. |
-| `public/assets/placeholders/` | Project publication placeholders | Project-owned | Retained for unavailable or unlicensed media. |
+| `public/assets/images/flag/` | `lipis/flag-icons` SVG flag set | MIT | Retained with the upstream MIT license at `public/assets/images/flag/LICENSE`. |
+| `public/assets/brand/logo.svg` | Morocco2030 publication placeholder | AGPL-3.0-only project asset | Retained; it is not an official tournament mark. |
+| `public/assets/brand/favicon.svg` | Morocco2030 publication placeholder | AGPL-3.0-only project asset | Retained; it is not an official tournament mark. |
+| `public/assets/placeholders/` | Morocco2030 neutral placeholders | AGPL-3.0-only project assets | Retained for unavailable or rights-unclear media. |
 
-## Removed Assets
+## Removed or excluded assets
 
-Official-style tournament logos and favicons, sponsor logos, city and stadium photography, news imagery, authentication photography, design-reference images, and the decorative pattern image were removed because redistribution rights could not be demonstrated. The application uses neutral local placeholders or text labels in their place.
+Official-style tournament logos and favicons, sponsor logos, city and stadium photography, news imagery, authentication photography, design-reference imagery, and decorative artwork were removed because redistribution rights could not be demonstrated. They must not be restored without a recorded source, author, license, attribution requirement, trademark assessment, and redistribution permission.
 
-## Trademarks and Data
+Runtime uploads, private media, and publication-unclear source files are excluded. The repository uses local neutral placeholders and text labels where those assets would otherwise appear.
 
-Third-party names and trademarks remain property of their respective owners. Text references do not imply affiliation or endorsement. football-data.org is an optional external data provider; its API responses are runtime data and are not bundled in this publication repository. Use of that service is subject to the provider's terms.
+## Data and integrations
 
-Do not add external logos, photographs, screenshots, or datasets without recording source, author, license, attribution requirements, trademark status, and redistribution permission.
+football-data.org is an optional external data provider. API responses, credentials, cached payloads, and imported datasets are not bundled in this repository. Users must review and comply with the provider's current terms before enabling the integration or redistributing derived data.
+
+Third-party names and trademarks remain the property of their respective rights holders. Text references identify subject matter and do not imply affiliation or endorsement. See `TRADEMARKS.md`.

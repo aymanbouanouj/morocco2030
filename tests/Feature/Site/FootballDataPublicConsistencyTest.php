@@ -65,7 +65,8 @@ class FootballDataPublicConsistencyTest extends TestCase
         $crestHtml = Blade::render("@include('public.partials.local-entity-media', ['type' => 'team', 'model' => \$team, 'slug' => \$team->slug, 'code' => \$team->code, 'name' => \$team->name, 'media' => ['url' => null, 'alt' => \$team->name]])", ['team' => $mexico]);
         $placeholderHtml = Blade::render("@include('public.partials.local-entity-media', ['type' => 'team', 'model' => \$team, 'slug' => \$team->slug, 'code' => \$team->code, 'name' => \$team->name, 'media' => ['url' => null, 'alt' => \$team->name]])", ['team' => $placeholder]);
 
-        $this->assertStringContainsString('https://crests.example/mex.svg', $crestHtml);
+        $this->assertStringContainsString('/assets/images/flag/flags/4x3/mx.svg', $crestHtml);
+        $this->assertStringNotContainsString('https://crests.example/mex.svg', $crestHtml);
         $this->assertStringContainsString('TBD', $placeholderHtml);
         $this->assertStringNotContainsString('FDH537417.svg', $placeholderHtml);
     }

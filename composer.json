@@ -4,7 +4,7 @@
     "type": "project",
     "description": "A Laravel demonstration portal and role-based operations platform for a Morocco 2030 football tournament concept.",
     "keywords": ["laravel", "football", "tournament", "cms", "rbac"],
-    "license": "proprietary",
+    "license": "AGPL-3.0-only",
     "require": {
         "php": "^8.2",
         "laravel/framework": "^12.0",

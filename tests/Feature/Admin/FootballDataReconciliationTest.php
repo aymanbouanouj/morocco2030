@@ -78,7 +78,7 @@ class FootballDataReconciliationTest extends TestCase
             ->assertDontSee('test-token-not-secret');
     }
 
-    public function test_real_team_crest_from_api_is_stored_and_displayed_safely(): void
+    public function test_real_team_crest_from_api_is_stored_while_local_flag_is_displayed_safely(): void
     {
         $payload = $this->seedImportedWorldCup();
         Http::fake([
@@ -95,7 +95,8 @@ class FootballDataReconciliationTest extends TestCase
 
         $this->get(route('teams.index'))
             ->assertOk()
-            ->assertSee('https://crests.example/mex.svg', false);
+            ->assertSee('/assets/images/flag/flags/4x3/mx.svg', false)
+            ->assertDontSee('https://crests.example/mex.svg', false);
     }
 
     public function test_tbd_placeholder_does_not_receive_fake_crest(): void

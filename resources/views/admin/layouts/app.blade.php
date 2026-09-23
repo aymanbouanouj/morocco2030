@@ -2680,10 +2680,10 @@
             text-align: center;
         }
 
-        .admin-ref-chart-canvas {
+        .admin-ref-card canvas.admin-ref-chart-canvas {
             position: absolute;
-            width: 1px;
-            height: 1px;
+            width: 1px !important;
+            height: 1px !important;
             opacity: 0;
             pointer-events: none;
         }
