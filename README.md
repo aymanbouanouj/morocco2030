@@ -107,9 +107,9 @@ See [Architecture](docs/ARCHITECTURE.md) for request, RBAC, translation, media, 
 | Area | Technology |
 |---|---|
 | Backend | PHP 8.2+, Laravel 12.69.2 |
-| Frontend | Blade, Vite 7.3.6, Tailwind CSS 4.3.3, Axios |
+| Frontend | Blade, Vite 8.3.0, Laravel Vite Plugin 3.2.0, Tailwind CSS 4.3.3, Axios |
 | Data | MySQL/MariaDB for application use; SQLite in memory for tests |
-| Build | Composer 2, npm lockfile, Vite |
+| Build | Composer 2, npm lockfile, Vite 8.3.0, concurrently 10.0.5 |
 | Testing | PHPUnit 11.5, Laravel HTTP testing, faked external HTTP |
 
 ## Security
