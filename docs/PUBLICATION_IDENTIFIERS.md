@@ -17,6 +17,21 @@ de4163f28418ad56a5e5d2c7cb1f2892f8d5a866
 Signed annotated tag object:
 5cacffd4193ca8d43f2f065e221b3a18d4f05c17
 
+### Release commit terminology
+
+`release/RELEASE-MANIFEST.json` records
+`4222d6377c8febc759b3418cb23c33fa65428d6b` as its `release_commit`.
+That identifier refers to the signed release-content commit recorded by the
+manifest during release preparation.
+
+The immutable signed annotated tag `v1.0.0` points to
+`de4163f28418ad56a5e5d2c7cb1f2892f8d5a866`, after the subsequent
+release-metadata finalization commits.
+
+For the published v1.0.0 Git state, citation, and Software Heritage revision,
+use `de4163f28418ad56a5e5d2c7cb1f2892f8d5a866`. The manifest field
+`release_commit` should not be interpreted as the final `v1.0.0` tag target.
+
 ## Zenodo
 
 Version DOI:

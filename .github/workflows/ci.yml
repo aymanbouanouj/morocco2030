@@ -48,8 +48,14 @@ jobs:
       - name: Install PHP dependencies
         run: composer install --no-interaction --prefer-dist --no-progress --optimize-autoloader
 
+      - name: Audit PHP dependencies
+        run: composer audit --locked --no-interaction
+
       - name: Install frontend dependencies
         run: npm ci
+
+      - name: Audit frontend dependencies
+        run: npm audit
 
       - name: Build frontend
         run: npm run build

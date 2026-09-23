@@ -1,5 +1,7 @@
 # Rapport final master - Morocco 2030
 
+> **Historical development snapshot:** This document records information observed during the original development environment and may contain versions or local-state details that differ from the current Public Repository Edition. For current publication versions, build status, tests and release metadata, use the root `README.md` and `release/RELEASE-MANIFEST.json`.
+
 ## Vue d'ensemble
 
 Morocco 2030 est une application Laravel 12 combinant portail public et back-office RBAC. Elle presente competition, matches, resultats, classements, equipes, joueurs, villes, stades, partenaires, news, compte public, recherche et carte. Le back-office controle les donnees operationnelles, l'editorial, les medias, les roles et l'integration football-data.org.

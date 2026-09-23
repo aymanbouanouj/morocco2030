@@ -1,5 +1,7 @@
 # Resume executif
 
+> **Historical development snapshot:** This document records information observed during the original development environment and may contain versions or local-state details that differ from the current Public Repository Edition. For current publication versions, build status, tests and release metadata, use the root `README.md` and `release/RELEASE-MANIFEST.json`.
+
 ## Identification du projet
 
 - Nom applicatif: `MOROCCO 2030`.
