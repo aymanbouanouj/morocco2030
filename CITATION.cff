@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: "Bounaouj"
     given-names: "Ayman"
-version: "1.0.0"
+version: "1.0.1"
 identifiers:
   - type: doi
     value: 10.5281/zenodo.22907985
