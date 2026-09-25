@@ -123,8 +123,23 @@ Concept DOI:
 
 ### Software Heritage
 
-Software Heritage identifiers for the v1.0.1 state are not recorded here
-until their exact persistent identifiers have been independently verified.
+Archive origin:
+https://doi.org/10.5281/zenodo.22907984
+
+Directory SWHID:
+swh:1:dir:67251d3011ee2b97398859659ad7c65b61f22934
+
+Snapshot SWHID:
+swh:1:snp:35539385daf9a7b62d2637704167584c9186cd98
+
+Release SWHID:
+swh:1:rel:c5ec49266101e89882c6e986883c7114d68dbf17
+
+Archived path:
+aymanbouanouj-morocco2030-8f3ab0d
+
+These Software Heritage identifiers correspond to the archived v1.0.1
+software record preserved through the Zenodo publication chain.
 
 ---
 
