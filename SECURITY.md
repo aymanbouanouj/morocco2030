@@ -13,7 +13,7 @@ Security fixes target the current `main` branch and the latest published 1.x rel
 
 Do not open a public issue for an exploitable vulnerability, active secret, personal data exposure, or private infrastructure detail.
 
-Use GitHub Private Vulnerability Reporting on the repository's **Security** tab once the public repository is available. If that channel is temporarily unavailable, retain the report privately and contact the maintainer through a non-public channel listed on the maintainer's GitHub profile. No private contact credential is stored in this repository.
+Use GitHub Private Vulnerability Reporting through the repository's Security tab. If that channel is temporarily unavailable, retain the report privately and contact the maintainer through a non-public channel listed on the maintainer's GitHub profile. No private contact credential is stored in this repository.
 
 Include the affected component and version, prerequisites, reproducible steps, impact, and a minimal safe proof of concept. Redact credentials, tokens, private records, session identifiers, and infrastructure details.
 

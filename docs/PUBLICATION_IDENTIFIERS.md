@@ -1,9 +1,21 @@
 # Persistent Publication Identifiers
 
-This document records persistent identifiers assigned to the archived
-Morocco2030 v1.0.0 public release.
+This document records persistent identifiers and publication provenance for
+the archived Morocco2030 public releases.
 
-## GitHub
+## Project-wide identifier
+
+Concept DOI:
+10.5281/zenodo.22907984
+
+The Concept DOI represents all published versions of Morocco2030 and resolves
+to the latest Zenodo version.
+
+---
+
+## v1.0.0
+
+### GitHub
 
 Repository:
 https://github.com/aymanbouanouj/morocco2030
@@ -11,7 +23,7 @@ https://github.com/aymanbouanouj/morocco2030
 Release:
 https://github.com/aymanbouanouj/morocco2030/releases/tag/v1.0.0
 
-Release commit:
+Final release/tag target:
 de4163f28418ad56a5e5d2c7cb1f2892f8d5a866
 
 Signed annotated tag object:
@@ -21,6 +33,7 @@ Signed annotated tag object:
 
 `release/RELEASE-MANIFEST.json` records
 `4222d6377c8febc759b3418cb23c33fa65428d6b` as its `release_commit`.
+
 That identifier refers to the signed release-content commit recorded by the
 manifest during release preparation.
 
@@ -32,18 +45,18 @@ For the published v1.0.0 Git state, citation, and Software Heritage revision,
 use `de4163f28418ad56a5e5d2c7cb1f2892f8d5a866`. The manifest field
 `release_commit` should not be interpreted as the final `v1.0.0` tag target.
 
-## Zenodo
+### Zenodo
 
 Version DOI:
 10.5281/zenodo.22907985
 
-Concept DOI:
-10.5281/zenodo.22907984
-
 Zenodo record:
 https://zenodo.org/records/22907985
 
-## Software Heritage
+Concept DOI:
+10.5281/zenodo.22907984
+
+### Software Heritage
 
 Origin:
 https://github.com/aymanbouanouj/morocco2030
@@ -61,5 +74,60 @@ Release SWHID:
 swh:1:rel:5cacffd4193ca8d43f2f065e221b3a18d4f05c17
 
 These Software Heritage identifiers refer specifically to the archived
-v1.0.0 state. Later commits, including commits that modify this document,
-have distinct content identities and are not represented by these SWHIDs.
+v1.0.0 state.
+
+---
+
+## v1.0.1
+
+### GitHub
+
+Repository:
+https://github.com/aymanbouanouj/morocco2030
+
+Release:
+https://github.com/aymanbouanouj/morocco2030/releases/tag/v1.0.1
+
+Final release/tag target:
+ac5ea68606e868dcb7c145f12af1061a2a3a3580
+
+Signed annotated tag object:
+8f3ab0d118a21899ad125029e8d1457503cdab9a
+
+### Release commit terminology
+
+`release/RELEASE-MANIFEST-v1.0.1.json` records
+`5d947d887a4699902d419c019347979a67ce5b2b` as its `release_commit`.
+
+That identifier refers to the signed release-preparation/content commit
+recorded by the manifest.
+
+The immutable signed annotated tag `v1.0.1` points to
+`ac5ea68606e868dcb7c145f12af1061a2a3a3580`, after the subsequent
+release-metadata finalization commit.
+
+For the final published v1.0.1 Git state, use
+`ac5ea68606e868dcb7c145f12af1061a2a3a3580`. The manifest field
+`release_commit` should not be interpreted as the final `v1.0.1` tag target.
+
+### Zenodo
+
+Version DOI:
+10.5281/zenodo.22933827
+
+Zenodo record:
+https://zenodo.org/records/22933827
+
+Concept DOI:
+10.5281/zenodo.22907984
+
+### Software Heritage
+
+Software Heritage identifiers for the v1.0.1 state are not recorded here
+until their exact persistent identifiers have been independently verified.
+
+---
+
+Later commits, including commits that modify this document, have distinct
+Git content identities and do not alter the immutable published v1.0.0 or
+v1.0.1 release tags.

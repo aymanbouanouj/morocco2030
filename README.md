@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/aymanbouanouj/morocco2030/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aymanbouanouj/morocco2030/actions/workflows/ci.yml)
 [![Release](https://img.shields.io/github/v/release/aymanbouanouj/morocco2030?display_name=tag)](https://github.com/aymanbouanouj/morocco2030/releases/latest)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22907985.svg)](https://doi.org/10.5281/zenodo.22907985)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22907984.svg)](https://doi.org/10.5281/zenodo.22907984)
 [![License](https://img.shields.io/badge/license-AGPL--3.0--only-5c0f1e)](LICENSE)
 [![Laravel 12](https://img.shields.io/badge/Laravel-12-FF2D20?logo=laravel&logoColor=white)](https://laravel.com/)
 [![PHP 8.2+](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](https://www.php.net/)
